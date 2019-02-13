@@ -1,0 +1,190 @@
+header{
+    background-color: #c40000;
+    margin-top: -10px;
+    margin-left: -10px;
+    width: 100vw;
+}
+body {
+    margin: 0px;
+}
+#søge {
+    background-position: 10px 12px;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    border-color: #c40000;
+}
+h1 {
+    font-family: Georgia;
+    font-size: 28px;
+    margin-top: 0;
+}
+.figure {
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    position: relative;
+}
+.søgefelt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./img/pulsen-8_1.jpg");
+    background-size: cover;
+    height: 210px;
+}
+footer{
+    background-color: #5d4646;
+    padding: 20px;
+    width: 100%;
+    height: 219px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #F1EBEB;
+    margin: 0px;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+#item2{
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    justify-self: end;
+}
+#item3{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    line-height: 0.75;
+}
+#item4{
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    justify-self: center;
+    font-size: 10px;
+}
+img{
+    padding: 5px;
+}
+#contact{
+    margin: 0px;
+}
+.body {
+    margin: 0%;
+} 
+.Picbox1 {
+    display: block;
+    margin-top: -16px;
+    margin-left: -10px;
+    width: 100vw;
+}
+.button { 
+    display: inline-block;
+    padding: 10px 25px;
+    font-size: 12px;
+    cursor: pointer;
+    text-align: center;
+    outline: none;
+    color: #fff;
+    background-color:#c40000;
+    border: none;
+    border-radius: 20px;
+    width: 157px;
+    height: 45;
+    position: relative;
+    left: 50%;
+    margin-bottom: 30px;
+}
+.button:hover {
+    background-color:#c40000;
+}
+.webudvikler{
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    margin: 10px;
+    box-sizing: border-box;
+    width: 94%;
+    font-size: 16px;
+    
+}
+.månedensskole {
+    font-style: georgia;
+    color: #f1ebeb;
+    background-color: #c40000;
+}
+h2 {
+    font-style: georgia;
+    font-size: 28px;
+}
+.blivwebudvikler {
+    background-color: #f1ebeb;
+}
+.billede {
+    display: block;
+    margin-top: -16px;
+    margin-left: -40px;
+    width: 94vw;
+}
+.figure2{
+    max-width: 100%;
+    max-height: 90%;
+}
+.ellipsis{
+    font-size: x-large;
+}
+nav{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-rows: 100px;
+    min-height: 100px;
+    padding: 0 10px;
+    border-top: 3px solid gray;
+    background-color: #c40000;
+    color: white;
+}
+label{
+    font-size: x-large;
+    justify-self: end;
+}
+#checkbox[type="checkbox"]{
+    display: none;
+}
+input[type="checkbox"]:checked~ul{
+    display: block;
+}
+ul{
+    display: none;
+    list-style: none;
+    padding: 0;
+}
+ul > li{
+    font-size: x-large;
+    padding: 10px;
+}
+@media screen and (min-width: 769px){
+    label {
+        display: none;
+    }
+    ul {
+        display: flex;
+        justify-content: flex-end;
+    }
+    ul > li {
+        font-size: large;
+    }
+}
+@media screen and(max-width: 768px){
+    ul {
+        grid-column: 1 / 3;
+    }
+    ul > li:before{
+        content: "CocaCola\00a0";
+        color: #c40000;
+    }
+}
